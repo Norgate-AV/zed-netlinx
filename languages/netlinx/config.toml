@@ -1,0 +1,9 @@
+name = "NetLinx"
+grammar = "netlinx"
+path_suffixes = ["axs", "axi"]
+line_comments = ["// "]
+block_comment = ["/*", "*/"]
+
+[[block_comments]]
+start = "(*"
+end = "*)"

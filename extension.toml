@@ -1,0 +1,11 @@
+id = "zed-netlinx"
+name = "NetLinx"
+version = "0.1.0"
+schema_version = 1
+authors = ["22627489+damienbutt@users.noreply.github.com"]
+description = "Syntax highlighting for the NetLinx programming language"
+repository = "https://github.com/Norgate-AV/zed-netlinx"
+
+[grammars.netlinx]
+repository = "https://github.com/Norgate-AV/tree-sitter-netlinx"
+rev = "master"
