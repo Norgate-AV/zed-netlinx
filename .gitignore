@@ -1,1 +1,4 @@
 /target
+/.history
+/grammars
+extension.wasm
