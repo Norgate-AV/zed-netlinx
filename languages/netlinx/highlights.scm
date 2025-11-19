@@ -427,14 +427,14 @@
 ;; ============================================================================
 ;; PREPROCESSOR
 ;; ============================================================================
-(preproc_include_keyword) @preprocessor
-(preproc_define_keyword) @preprocessor
-(preproc_warn_keyword) @preprocessor
-(preproc_disable_warning_keyword) @preprocessor
-(preproc_if_defined_keyword) @preprocessor
-(preproc_if_not_defined_keyword) @preprocessor
-(preproc_else_keyword) @preprocessor
-(preproc_end_if_keyword) @preprocessor
+(preproc_include_keyword) @keyword
+(preproc_define_keyword) @keyword
+(preproc_warn_keyword) @keyword
+(preproc_disable_warning_keyword) @keyword
+(preproc_if_defined_keyword) @keyword
+(preproc_if_not_defined_keyword) @keyword
+(preproc_else_keyword) @keyword
+(preproc_end_if_keyword) @keyword
 
 ;; Preproc Arguments
 ;; Highlight all preproc_args initially as constants
