@@ -1,22 +1,8 @@
 (
     (comment)* @context
     .
-    (declaration
-        declarator: [
-            (function_declarator
-                declarator: (_) @name)
-            ]
-        ) @item
-    )
-
-(
-    (comment)* @context
-    .
-    (function_definition
-        declarator: [
-            (function_declarator
-                declarator: (_) @name
-                )
-            ]
-        ) @item
-    )
+    (define_function
+        (function_definition
+        name: (_) @name)
+    ) @item
+)
