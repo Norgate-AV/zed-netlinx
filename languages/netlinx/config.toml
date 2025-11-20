@@ -45,3 +45,4 @@ brackets = [
         "comment",
     ] },
 ]
+import_path_strip_regex = "^'$"
