@@ -2,14 +2,10 @@ name = "NetLinx"
 grammar = "netlinx"
 path_suffixes = ["axs", "axi", "axb", "lib"]
 line_comments = ["// "]
-# block_comment = { start = "/*", prefix = "* ", end = "*/", tab_size = 1 }
 block_comments = [
     { start = "/*", end = "*/", prefix = "* ", tab_size = 1 },
     { start = "(*", end = "*)", prefix = "* ", tab_size = 1 },
 ]
-# [[block_comments]]
-# start = "(*"
-# end = "*)"
 documentation_comment = { start = "/**", prefix = "* ", end = "*/", tab_size = 1 }
 tab_size = 4
 hard_tabs = false
