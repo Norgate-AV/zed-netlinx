@@ -22,3 +22,7 @@ target
 
 # Local History
 .history/
+
+# Zed Extension
+grammars
+extension.wasm
