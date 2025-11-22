@@ -4,6 +4,12 @@ A [NetLinx](https://www.amx.com/en/site_elements/amx-language-reference-guide-ne
 
 <img src="./assets/img/zed-netlinx.png" alt="zed-entlinx" width="600" />
 
+## Features
+
+- Syntax Highlighting
+- Basic Code Snippets
+- Outlining
+
 ## LICENSE
 
 [MIT](./LICENSE)
