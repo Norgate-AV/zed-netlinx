@@ -7,15 +7,18 @@ on:
   push:
     branches:
       - master
+  workflow_call:
 
 jobs:
-  test:
-    name: Test Extension
+  checks:
+    name: Run Checks
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
