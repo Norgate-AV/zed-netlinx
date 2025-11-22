@@ -6,3 +6,11 @@
         name: (_) @name)
     ) @item
 )
+
+(
+    (comment)* @context
+    .
+    (struct_specifier
+        name: (_) @name
+    ) @item
+)

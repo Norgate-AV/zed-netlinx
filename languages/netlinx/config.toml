@@ -29,4 +29,4 @@ brackets = [
         "comment",
     ] },
 ]
-import_path_strip_regex = "^'$"
+import_path_strip_regex = "^'|'$"
