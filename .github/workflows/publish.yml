@@ -1,0 +1,35 @@
+name: Publish to Zed Extensions
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (e.g., v0.1.0)"
+        required: true
+        type: string
+      fork-repo:
+        description: "Your fork of zed-industries/extensions (owner/repo)"
+        required: false
+        type: string
+        default: "damienbutt/extensions"
+      create-pr:
+        description: "Create pull request automatically"
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Run publish script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ./scripts/publish.sh "${{ inputs.version }}" "${{ inputs.fork-repo }}" "${{ inputs.create-pr }}"
