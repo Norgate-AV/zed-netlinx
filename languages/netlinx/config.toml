@@ -2,27 +2,11 @@ name = "NetLinx"
 grammar = "netlinx"
 path_suffixes = ["axs", "axi", "axb", "lib"]
 line_comments = ["// "]
-block_comments = [
-    { start = "/*", end = "*/", prefix = "* ", tab_size = 1 },
-    { start = "(*", end = "*)", prefix = "* ", tab_size = 1 },
-]
+block_comment = { start = "/*", end = "*/", prefix = "* ", tab_size = 1 }
 documentation_comment = { start = "/**", prefix = "* ", end = "*/", tab_size = 1 }
 tab_size = 4
 hard_tabs = false
 first_line_pattern = "(?i)^(program|module)_name\\s*=.*$"
-decrease_indent_patterns = [
-    { pattern = "^\\s*\\{.*\\}?\\s*$", valid_after = [
-        "if",
-        "for",
-        "while",
-        "switch",
-        "else",
-        "select",
-    ] },
-    { pattern = "^\\s*else\\b", valid_after = [
-        "if",
-    ] },
-]
 autoclose_before = ";:.,=}])>"
 brackets = [
     { start = "{", end = "}", close = true, newline = true },
