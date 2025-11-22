@@ -29,3 +29,6 @@ target
 # Zed Extension
 grammars
 extension.wasm
+
+# Environment Files
+.env
