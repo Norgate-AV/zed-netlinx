@@ -9,4 +9,4 @@ snippets = "./snippets/netlinx.json"
 
 [grammars.netlinx]
 repository = "https://github.com/Norgate-AV/tree-sitter-netlinx"
-rev = "master"
+rev = "5639014332c4aa1d930e58a052c0a34cf99a4526"
