@@ -3,10 +3,10 @@ name = "NetLinx"
 version = "0.1.0"
 schema_version = 1
 authors = ["Damien Butt <22627489+damienbutt@users.noreply.github.com>"]
-description = "NetLinx language support for Zed"
+description = "NetLinx support for Zed"
 repository = "https://github.com/Norgate-AV/zed-netlinx"
 snippets = "./snippets/netlinx.json"
 
 [grammars.netlinx]
 repository = "https://github.com/Norgate-AV/tree-sitter-netlinx"
-rev = "5639014332c4aa1d930e58a052c0a34cf99a4526"
+rev = "296c0e62cd507fc23cd1f1db06142f808483cf1a"
