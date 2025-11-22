@@ -2,8 +2,8 @@ id = "zed-netlinx"
 name = "NetLinx"
 version = "0.1.0"
 schema_version = 1
-authors = ["22627489+damienbutt@users.noreply.github.com"]
-description = "Syntax highlighting for the NetLinx programming language"
+authors = ["Damien Butt <22627489+damienbutt@users.noreply.github.com>"]
+description = "NetLinx language support for Zed"
 repository = "https://github.com/Norgate-AV/zed-netlinx"
 snippets = "./snippets/netlinx.json"
 
