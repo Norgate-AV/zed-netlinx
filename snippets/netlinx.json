@@ -341,7 +341,9 @@
     },
     "timeline_create": {
         "prefix": "timeline_create",
-        "body": ["timeline_create(${1:id}, ${2:time_array}, ${3:time_array_size}, ${4:absolute}, ${5:repeat)$0"]
+        "body": [
+            "timeline_create(${1:id}, ${2:time_array}, ${3:time_array_size}, ${4:absolute}, ${5:repeat)$0"
+        ]
     },
     "timeline_kill": {
         "prefix": "timeline_kill",
