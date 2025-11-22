@@ -1,6 +1,9 @@
 # zed-netlinx
 
-A [NetLinx](https://www.amx.com/en/site_elements/amx-language-reference-guide-netlinx-programming-language) extension for [Zed](https://zed.dev).
+A [NetLinx][netlinx] extension for [Zed][zed].
+
+[netlinx]: https://www.amx.com/en/site_elements/amx-language-reference-guide-netlinx/programming-language
+[zed]: https://zed.dev
 
 <img src="./assets/img/zed-netlinx.png" alt="zed-entlinx" width="600" />
 
