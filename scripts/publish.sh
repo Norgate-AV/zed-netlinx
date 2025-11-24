@@ -38,8 +38,14 @@ if ! git clone --recurse-submodules "https://github.com/$FORK_REPO.git" "$TEMP_D
 fi
 
 # Configure git
-git -C "$TEMP_DIR" config user.name "github-actions[bot]" || { echo "Failed to configure git user.name"; exit 1; }
-git -C "$TEMP_DIR" config user.email "github-actions[bot]@users.noreply.github.com" || { echo "Failed to configure git user.email"; exit 1; }
+git -C "$TEMP_DIR" config user.name "github-actions[bot]" || {
+    echo "Failed to configure git user.name"
+    exit 1
+}
+git -C "$TEMP_DIR" config user.email "github-actions[bot]@users.noreply.github.com" || {
+    echo "Failed to configure git user.email"
+    exit 1
+}
 
 # Create branch for update
 BRANCH_NAME="update-netlinx-$VERSION"
