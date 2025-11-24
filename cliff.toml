@@ -62,7 +62,7 @@ First release of zed-netlinx.
 {%- endif %}
 
 {%- if github %}
-    {%- set excluded_users = ["Norgate-AV", damienbutt"", "actions-user", "github-actions", "github-actions[bot]"] %}
+    {%- set excluded_users = ["Norgate-AV", "damienbutt", "actions-user", "github-actions", "github-actions[bot]"] %}
     {%- set first_time_contributors = [] %}
     {%- for contributor in github.contributors %}
         {%- if contributor.is_first_time %}
